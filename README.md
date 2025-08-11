@@ -1,17 +1,104 @@
-# riverpod_todo_showcase
 
-A simple todo app showcasing Riverpod skills
 
-## Getting Started
+# 📝 Riverpod Todo App
 
-This project is a starting point for a Flutter application.
+A clean and functional **Todo app** built with **Flutter** and **Riverpod**, showcasing state management best practices and essential task management features.
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+✅ **Add new todos** with a text input  
+✅ **Mark todos as complete/incomplete** using checkboxes  
+✅ **Delete todos** with a delete button  
+✅ **Filter todos** by status:
+- All
+- Active
+- Completed  
+  ✅ **Show todo counts**: total, completed, and pending  
+  ✅ **Edit existing todos** with an inline dialog  
+  ✅ **Simple theme persistence** using `SharedPreferences`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# Todo-App
+---
+
+## 📸 Screenshots
+
+*(Add your screenshots here, for example:)*  
+| Home | Filtered Todos | Edit Dialog |  
+|------|----------------|-------------|  
+| ![](screenshots/home.png) | ![](screenshots/filter.png) | ![](screenshots/edit.png) |
+
+---
+
+## 🛠️ Tech Stack
+
+- **Flutter** — UI framework
+- **Riverpod** — State management
+- **SharedPreferences** — Local storage for theme persistence
+- **Dart** — Programming language
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Wave780/Todo-App.git
+cd riverpod_todo_app
+```
+
+### 2️⃣ Install dependencies
+```bash
+flutter pub get
+```
+
+### 3️⃣ Run the app
+```bash
+flutter run
+```
+
+---
+
+## 📂 Project Structure
+```
+lib/
+│
+├── model/
+│
+├── provider/
+│   └── todo_providers.dart
+│
+├── screen/
+│   ├── todo_dashboard.dart
+│   └── todo_setting.dart
+│
+├── theme/
+│   ├── app_theme.dart
+│   └── theme_provider.dart
+│
+├── utils/
+│   ├── preference_service.dart
+│   └── widgets/
+│       ├── todo_filter.dart
+│       ├── todo_item.dart
+│       └── todo_stats.dart
+│
+└── main.dart
+```
+
+---
+
+## ⚙️ How It Works
+
+- **State Management:** All app state is handled by Riverpod providers and `StateNotifier`.
+- **Persistence:** The selected theme is saved locally using `SharedPreferences` and restored on launch.
+- **Editing Todos:** Opens a dialog with the current title pre-filled for easy changes.
+- **Filtering:** A simple toggle system updates the UI reactively based on selected filter.
+
+---
+
+## 📌 Todo Enhancements
+
+- [ ] Add dark mode toggle
+- [ ] Support for cloud sync (Supabase / Firebase)
+- [ ] Drag-and-drop todo reordering
+
+---
