@@ -21,11 +21,14 @@ A clean and functional **Todo app** built with **Flutter** and **Riverpod**, sho
 
 ## 📸 Screenshots
 
-*(Add your screenshots here, for example:)*  
-| Home | Filtered Todos | Edit Dialog |  
-|------|----------------|-------------|  
-| ![](https://github.com/Wave780/Todo-App/blob/main/assets/Mobile-view-preview.gif)| ![](https://github.com/Wave780/Todo-App/blob/main/assets/Web-view-dark-theme.png) | ![](https://github.com/Wave780/Todo-App/blob/main/assets/Web-view-edit-dialog.png) |
-| ![](https://github.com/Wave780/Todo-App/blob/main/assets/Web-view-home-page.png) | ![](https://github.com/Wave780/Todo-App/blob/main/assets/mobile-view-home-page.png) | ![](https://github.com/Wave780/Todo-App/blob/main/assets/mobile-view-theme.png) |
+![](https://github.com/Wave780/Todo-App/blob/main/assets/Mobile-view-preview.gif)
+
+*()* 
+| Shot 1 |  Shot 2      | Shot 2      ß|  
+|--------|--------------|-------------|  
+| ![](https://github.com/Wave780/Todo-App/blob/main/assets/Web-view-dark-theme.png) | ![](https://github.com/Wave780/Todo-App/blob/main/assets/Web-view-edit-dialog.png) |
+| ![](https://github.com/Wave780/Todo-App/blob/main/assets/Web-view-home-page.png) | ![](https://github.com/Wave780/Todo-App/blob/main/assets/mobile-view-home-page.png) | 
+![](https://github.com/Wave780/Todo-App/blob/main/assets/mobile-view-theme.png) |
 
 
 ---
