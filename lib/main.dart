@@ -23,7 +23,8 @@ class MyApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final appTheme = ref.watch(themeProvider);
     return MaterialApp(
-      title: 'Riverpod Todo Showcase',
+      debugShowCheckedModeBanner: false,
+      title: ' Todo App',
       theme: appTheme.toThemeData(),
       home: TodoDashboard(),
     );

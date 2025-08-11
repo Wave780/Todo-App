@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_todo_showcase/provider/todo_providers.dart';
+import 'package:riverpod_todo_showcase/screen/todo_setting.dart';
 import 'package:riverpod_todo_showcase/utils/%20widgets/todo_filter.dart';
 import 'package:riverpod_todo_showcase/utils/%20widgets/todo_item.dart';
 
@@ -15,8 +16,16 @@ class TodoDashboard extends ConsumerWidget {
     final filteredTodos = ref.watch(filteredTodoProvider);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Riverpod Todo Showcase'),
+        title: const Text('Riverpod Todo App'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => TodoSetting()));
+              },
+              icon: Icon(Icons.settings))
+        ],
       ),
       body: Column(children: [
         //Statistics section
